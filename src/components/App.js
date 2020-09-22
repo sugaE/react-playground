@@ -3,22 +3,34 @@ import React from 'react';
 import './App.css';
 import {
   BrowserRouter,
-  // Switch,
   // Route,
-  // Link,
+  Switch,
+  Link,
   // StaticRouter,
 } from 'react-router-dom';
 // import Tree from "./Tree";
-import Codility from './Codility';
+import Codility from '../Codility';
+import LeetCode from '../LeetCode';
+
+import routes from './routes';
+
 // import Components from './Components';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <BrowserRouter basename="/codility">
+        <BrowserRouter basename="/algorithm">
+          {routes[0].routes.map((v) => (
+            <li key={v.path}>
+              <Link to={v.path}>{v.path}</Link>
+            </li>
+          ))}
+
           <Codility />
+          <LeetCode />
         </BrowserRouter>
+
         {/*
 <BrowserRouter basename="/components">
           <Components />
