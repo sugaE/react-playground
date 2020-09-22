@@ -1,0 +1,78 @@
+{
+  "extends": ["react-app", "airbnb", "airbnb/hooks"],
+
+  "rules": {
+    "strict": [2, "global"], // 严格模式, 模块内部不需要
+    "no-unused-expressions": [
+      2,
+      {
+        "allowShortCircuit": true, // 允许短路运算符
+        "allowTernary": true // 允许三目运算符
+      }
+    ],
+    "radix": [2, "as-needed"], // 类型转换的基数参数必要时才传, 如: 使用 parseInt('2') 而不是 parseInt('2', 10)
+    "no-mixed-operators": 0, // 禁用复杂运算必须使用括号声明优先级
+    "react/jsx-no-bind": [
+      2,
+      {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true
+      }
+    ], // jsx使用bind或箭头函数会在每次render时创建一个函数, 增加开销, 故而除了refs外均禁止使用bind或箭头函数
+    "react/jsx-boolean-value": [2, "always"], // 强制布尔值属性必须赋值
+    "react/sort-comp": [
+      2,
+      {
+        "order": ["static-methods", "lifecycle", "render", "everything-else"],
+      }
+    ], // 按规则定义方法定义顺序
+    "func-names": 0, // 禁用匿名函数检查
+    "object-shorthand": 1, // 禁用es6精简语法检查, 如: {a,b,c}
+    "prefer-template": 0, // 禁用模板语法代替字符串拼接语法检查, 如: `Hello, ${name}`
+    "react/prefer-stateless-function": 0, // 禁用react的纯无状态组件简写检查
+    "react/jsx-equals-spacing": [2, "never"], // jsx等号之间不允许出现空格
+    "import/no-unresolved": 0, // 禁用require.resolve检查
+    # "keyword-spacing": [
+    #   2,
+    #   {
+    #     "overrides": {
+    #       "if": {"after": false},
+    #       "for": {"after": false},
+    #       "while": {"after": false},
+    #       "catch": {"after": false}
+    #     }
+    #   }
+    # ], // 关键词前后的空格检查
+    "comma-dangle": [1, "always-multiline"], // 关闭! JSON的尾元素逗号检查, 多行必须加, 单行必须不加
+    "object-curly-spacing": [2, "never"], // 括号前后禁止使用空格
+    "max-len": 0, // 禁用单行最大字符数检查
+    "no-bitwise": 0, // 禁用位运算检查
+    "one-var": 0, // 禁用变量统一声明检查
+    "prefer-const": 0, // 禁用常量偏好检查
+    "one-var-declaration-per-line": 0, // 禁用一行只能定义一个变量检查
+    "no-underscore-dangle": [2, {"allowAfterThis": true}], // 禁用对this下的带下划线变量名检查
+    "react/jsx-props-no-spreading": 0, // 禁用jsx结束标签前面的空格检查
+    "no-param-reassign": 0, // 禁用函数参数重用检查
+    "global-require": 0, // 禁用require不允许出现在作用域内部的检查
+    "space-before-function-paren": 0, // 禁用 function 和 ( 之间的空格检查,
+    "import/no-extraneous-dependencies": 0, // 禁用 依赖检查(第三方的import必须在package.json的dependencies中声明过)
+    "react/jsx-filename-extension": [1, {"extensions": [".js"]}], // jsx文件的扩展名必须是js
+    "no-use-before-define": 0, // 禁用变量在定义前使用检查(规避styles总是在文件末尾定义的问题)
+    "react/prop-types": 0, // 禁用props必须定义propTypes检查
+    "class-methods-use-this": 0, // 禁用强制没有使用this指针的方法必须定义为静态方法的检查
+    "no-new-func": 0, // 禁用new Function检查
+    "no-plusplus": 0, // 禁用 ++ -- 检查
+    "yoda": 0, // 禁用常量必须在逻辑运算符右边的检查
+    "arrow-body-style": 0, // 箭头函数体规则检查
+    "no-console": [1, {"allow": ["warn", "error"]}], // 允许console.warn & console.error
+    "dot-notation": 1, // 禁用强制点运算符
+    "no-lonely-if": 0, // 关闭孤立if检查
+    "react/require-extension": 0, // 这是个过期的规则, 禁用之
+    "no-nested-ternary": 0, // 禁用递归三目运算符检查
+    "linebreak-style": 1, // 禁用换行符检查
+    "no-floating-decimal": 0, // 允许点开头的浮点数
+    "react/no-unused-prop-types": 0, // 会识别错误
+    "react/forbid-prop-types": 0, // ['any', 'array', 'object']
+    "no-case-declarations": 0 //
+  }
+}
