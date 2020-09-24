@@ -5,11 +5,13 @@ import OddOccurrencesInArray from './OddOccurrencesInArray';
 // import PermMissingElem from './PermMissingElem';
 // import TapeEquilibrium from './TapeEquilibrium';
 import ByteDanceTree from './byte_dance/migong';
-// import BDminTime from './byte_dance/MinTime';
+// import BDminTime from './410-split-array-largest-sum';
 import BDleastInterval from './byte_dance/LeastInterval';
 import BDTinyURL from './byte_dance/TinyURL';
 import EtwoSum from './byte_dance/EtwoSum';
 import LengthOfLongestSubstring from './byte_dance/LengthOfLongestSubstring';
+import P410 from './410-split-array-largest-sum';
+import LCP12 from './LCP12';
 
 const routes = [
   {
@@ -22,11 +24,6 @@ const routes = [
     function: ByteDanceTree,
     desc: '广度优先遍历二叉树',
   },
-  // {
-  //   path: '/byte_dance/minTime',
-  //   function: BDminTime,
-  //   desc: '没做出来sad',
-  // },
   {
     path: '/byte_dance/leastInterval',
     function: BDleastInterval,
@@ -43,6 +40,16 @@ const routes = [
   {
     path: '/byte_dance/m/longest-substring-without-repeating-characters',
     function: LengthOfLongestSubstring,
+  },
+  {
+    path: '/lcp/m/xiao-zhang-shua-ti-ji-hua',
+    function: LCP12,
+    desc: '完全没有头绪',
+  },
+  {
+    path: '/h/410-split-array-largest-sum',
+    function: P410,
+    desc: '二分查找',
   },
 
 ];
