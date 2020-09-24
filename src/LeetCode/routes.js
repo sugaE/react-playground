@@ -12,6 +12,8 @@ import EtwoSum from './byte_dance/EtwoSum';
 import LengthOfLongestSubstring from './byte_dance/LengthOfLongestSubstring';
 import P410 from './410-split-array-largest-sum';
 import LCP12 from './LCP12';
+import P243 from './P243';
+import P256 from './P256';
 
 const routes = [
   {
@@ -47,9 +49,16 @@ const routes = [
     desc: '完全没有头绪',
   },
   {
-    path: '/h/410-split-array-largest-sum',
+    path: '/P243',
+    function: P243,
+  },
+  {
+    path: '/P410',
     function: P410,
-    desc: '二分查找',
+  },
+  {
+    path: '/P256',
+    function: P256,
   },
 
 ];
