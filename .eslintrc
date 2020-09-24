@@ -32,17 +32,6 @@
     "react/prefer-stateless-function": 0, // 禁用react的纯无状态组件简写检查
     "react/jsx-equals-spacing": [2, "never"], // jsx等号之间不允许出现空格
     "import/no-unresolved": 0, // 禁用require.resolve检查
-    # "keyword-spacing": [
-    #   2,
-    #   {
-    #     "overrides": {
-    #       "if": {"after": false},
-    #       "for": {"after": false},
-    #       "while": {"after": false},
-    #       "catch": {"after": false}
-    #     }
-    #   }
-    # ], // 关键词前后的空格检查
     "comma-dangle": [1, "always-multiline"], // 关闭! JSON的尾元素逗号检查, 多行必须加, 单行必须不加
     "object-curly-spacing": [2, "never"], // 括号前后禁止使用空格
     "max-len": 0, // 禁用单行最大字符数检查
@@ -64,7 +53,7 @@
     "no-plusplus": 0, // 禁用 ++ -- 检查
     "yoda": 0, // 禁用常量必须在逻辑运算符右边的检查
     "arrow-body-style": 0, // 箭头函数体规则检查
-    "no-console": [1, {"allow": ["warn", "error"]}], // 允许console.warn & console.error
+    //"no-console": [1, {"allow": ["warn", "error"]}], // 允许console.warn & console.error
     "dot-notation": 1, // 禁用强制点运算符
     "no-lonely-if": 0, // 关闭孤立if检查
     "react/require-extension": 0, // 这是个过期的规则, 禁用之
@@ -73,6 +62,7 @@
     "no-floating-decimal": 0, // 允许点开头的浮点数
     "react/no-unused-prop-types": 0, // 会识别错误
     "react/forbid-prop-types": 0, // ['any', 'array', 'object']
-    "no-case-declarations": 0 //
+    "no-case-declarations": 0, //
+    "no-continue": 0
   }
 }

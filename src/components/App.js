@@ -4,7 +4,7 @@ import './App.css';
 import {
   BrowserRouter,
   // Route,
-  Switch,
+  // Switch,
   Link,
   // StaticRouter,
 } from 'react-router-dom';

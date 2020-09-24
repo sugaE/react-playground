@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter, Switch, Route, Link,
-} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 
 function Doms(props) {
   const {inputs, solution} = props.data;
@@ -47,7 +45,7 @@ function RouteWithSubRoutes(route) {
 class Algorithm extends React.Component {
   render() {
     const {routes = [], path} = this.props;
-    console.log('al', routes, path);
+
     return (
       <Route path={path}>
         <ul>
@@ -55,7 +53,7 @@ class Algorithm extends React.Component {
             <li key={v.path}>
               <Link to={path + v.path}>
                 {v.path}
-                {v.hard ? '(复习！)' : ''}
+                {v.desc || ''}
               </Link>
             </li>
           ))}

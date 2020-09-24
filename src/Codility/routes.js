@@ -25,12 +25,12 @@ const routes = [
   {
     path: '/perm_missing_elem',
     function: PermMissingElem,
-    hard: true,
+    desc: '复习',
   },
   {
     path: '/tape_equilibrium',
     function: TapeEquilibrium,
-    hard: true,
+    desc: '复习',
   },
 ];
 
