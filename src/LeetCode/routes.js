@@ -9,6 +9,7 @@ import ByteDanceTree from './byte_dance/migong';
 import BDleastInterval from './byte_dance/LeastInterval';
 import BDTinyURL from './byte_dance/TinyURL';
 import EtwoSum from './byte_dance/EtwoSum';
+import LengthOfLongestSubstring from './byte_dance/LengthOfLongestSubstring';
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
   {
     path: '/byte_dance/e/two-sum',
     function: EtwoSum,
+  },
+
+  {
+    path: '/byte_dance/m/longest-substring-without-repeating-characters',
+    function: LengthOfLongestSubstring,
   },
 
 ];
