@@ -13,6 +13,7 @@ import LengthOfLongestSubstring from './byte_dance/LengthOfLongestSubstring';
 import P410 from './410-split-array-largest-sum';
 import LCP12 from './LCP12';
 import P243 from './P243';
+import TMP from './Tmp';
 import P256 from './P256';
 
 const routes = [
@@ -59,6 +60,10 @@ const routes = [
   {
     path: '/P256',
     function: P256,
+  },
+  {
+    path: '/TMP',
+    function: TMP,
   },
 
 ];
