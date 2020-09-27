@@ -16,20 +16,15 @@ const inputs = [
  * @return {number}
  */
 let lengthOfLongestSubstring = function(s) {
-  // let res=Array.from({length:s.length})
   let max = 0;
   let map = new Map();
-  // console.log('\n');
   let lastd = -1;
   for (let i = 0; i < s.length; i++) {
     let lasti = map.get(s[i]);
-    if (lasti === undefined) {
-      lasti = -1;
-    } else {
+    if (lasti !== undefined) {
+      // 上一个重复的字母的index，// 当前字母上一个重复的index
       lastd = Math.max(lastd, lasti);
     }
-    // i = lasti;
-    // lastd = lasti < 0 ? lastd : i;
     max = Math.max(max, i - lastd);
     map.set(s[i], i);
     // console.log(map, lasti, lastd, max);

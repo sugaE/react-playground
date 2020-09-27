@@ -48,13 +48,22 @@ class Algorithm extends React.Component {
 
     return (
       <Route path={path}>
+
         <ul>
           {routes.map((v) => (
             <li key={v.path}>
               <Link to={path + v.path}>
                 {v.path}
-                {v.desc || ''}
               </Link>
+              {v.desc && (
+              <span>
+                (
+                <a href={v.originUrl || ''} target={v.originUrl ? '_blank' : '_self'}>
+                  {v.desc}
+                </a>
+                )
+              </span>
+              )}
             </li>
           ))}
         </ul>

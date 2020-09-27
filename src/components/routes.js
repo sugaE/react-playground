@@ -5,8 +5,9 @@
 // import PermMissingElem from './PermMissingElem';
 // import TapeEquilibrium from './TapeEquilibrium';
 
-import Codility from '../Codility';
-import LeetCode from '../LeetCode';
+// import Codility from '../Codility';
+// import LeetCode from '../LeetCode';
+// import Tmp from './Tmp';
 
 const routes = [
   {
@@ -15,11 +16,14 @@ const routes = [
     routes: [
       {
         path: '/codility',
-        component: Codility,
+        // component: Codility,
       },
       {
         path: '/leetcode',
-        component: LeetCode,
+        // component: LeetCode,
+      },
+      {
+        path: '/tmp-playground',
       },
     ],
   },

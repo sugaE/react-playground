@@ -1,26 +1,18 @@
-// import BinaryGap from './BinaryGap';
-// import CyclicRotation from './CyclicRotation';
-import OddOccurrencesInArray from './OddOccurrencesInArray';
-// import FrogJmp from './FrogJmp';
-// import PermMissingElem from './PermMissingElem';
-// import TapeEquilibrium from './TapeEquilibrium';
 import ByteDanceTree from './byte_dance/migong';
-// import BDminTime from './410-split-array-largest-sum';
 import BDleastInterval from './byte_dance/LeastInterval';
 import BDTinyURL from './byte_dance/TinyURL';
 import EtwoSum from './byte_dance/EtwoSum';
 import LengthOfLongestSubstring from './byte_dance/LengthOfLongestSubstring';
-import P410 from './410-split-array-largest-sum';
+import P410 from './P410';
 import LCP12 from './LCP12';
 import P243 from './P243';
-import TMP from './Tmp';
 import P256 from './P256';
+import P751 from './P751';
+import P758 from './P758';
+
+const LEETCODE_PREFIX = 'https://leetcode-cn.com/problems/';
 
 const routes = [
-  {
-    path: '/odd_occurrences_in_array',
-    function: OddOccurrencesInArray,
-  },
   // byte_dance
   {
     path: '/byte_dance/tree',
@@ -44,10 +36,11 @@ const routes = [
     path: '/byte_dance/m/longest-substring-without-repeating-characters',
     function: LengthOfLongestSubstring,
   },
+
   {
     path: '/lcp/m/xiao-zhang-shua-ti-ji-hua',
     function: LCP12,
-    desc: '完全没有头绪',
+    desc: '⚠️动态规划/二分法',
   },
   {
     path: '/P243',
@@ -62,8 +55,16 @@ const routes = [
     function: P256,
   },
   {
-    path: '/TMP',
-    function: TMP,
+    path: '/P751',
+    function: P751,
+    originUrl: LEETCODE_PREFIX + 'ip-to-cidr/',
+    desc: '❗751. IP 到 CIDR',
+  },
+  {
+    path: '/P758',
+    function: P758,
+    originUrl: LEETCODE_PREFIX + 'bold-words-in-string/',
+    desc: '758. 字符串中的加粗单词',
   },
 
 ];

@@ -13,8 +13,14 @@ import Codility from '../Codility';
 import LeetCode from '../LeetCode';
 
 import routes from './routes';
+import Algorithm from './Algorithm';
+import Function from './Function';
 
 // import Components from './Components';
+
+const routesTmp = [{
+  function: Function, path: '/',
+}];
 
 class App extends React.Component {
   render() {
@@ -29,6 +35,8 @@ class App extends React.Component {
 
           <Codility />
           <LeetCode />
+          <Algorithm routes={routesTmp} path="/tmp-playground" />
+
         </BrowserRouter>
 
         {/*
