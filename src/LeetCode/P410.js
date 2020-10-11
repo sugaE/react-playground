@@ -27,7 +27,7 @@ let splitArray = function(nums, m) {
   while (left < right) {
     let mid = Math.floor(left + (right - left) / 2);
     let splits = split(nums, mid);
-    // console.log('sss', left, right, 'mid', mid, 's', splits);
+    console.log('sss', left, right, 'mid', mid, 's', splits);
     if (splits > m) {
       // 如果分割数太多，说明「子数组各自的和的最大值」太小，此时需要将「子数组各自的和的最大值」调大
       // 下一轮搜索的区间是 [mid + 1, right]
